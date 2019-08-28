@@ -1,6 +1,13 @@
 <template>
 
     <div>
+
+      <mt-swipe :auto="4000" style="height: 200px;">
+        <mt-swipe-item v-for="item in lunboList" :key="item.ArticleId">
+          <img :src="item.TitlePhoto" alt="" style="height: 100%;width: 100%"/>
+        </mt-swipe-item>
+      </mt-swipe>
+
       <h1>测试测试测试</h1>
       <!-- 使用自定义组件（全局） -->
       <my-com1></my-com1>
@@ -10,7 +17,6 @@
       <!-- 组件切换 -->
       <my-com2 v-if="flog"></my-com2>
       <br>
-      <my-com3></my-com3>
 
       <!-- 组件切换 -->
       <a href="" @click.prevent="comment='myCom1'">组件一</a>
@@ -48,13 +54,15 @@
     // data 为一个方法
     data:function () {
       return{
-        count:0
+        count:0,
       }
     },
+
     methods:{
       add(){
         this.count ++
-      }
+      },
+
     }
   })
   // 1.2 使用Vue.component('组件的名称', 创建出来的组件模板名称)
@@ -80,11 +88,31 @@
 
     export default {
       name: "",
-      data(){return{
+      data(){
+        return{
         flog:true,
-        comment:'myCom2'
+        comment:'myCom2',
+        lunboList:[],
       }},
-      methods:{},
+      created(){
+        this.getArticle()
+      },
+      methods:{
+        // 获取数据 get方法
+        getArticle() {
+          //新闻列表接口：
+          // url路径为相对路径，且前面不能有 /
+          var urls = 'article_list/';
+          //jsonp请求数据时，后台API接口要支持jsonp
+          this.$http.get(urls).then((response)=> {
+              this.lunboList = response.body
+              // console.log(response.body)
+            },
+            function(err) { 		      //获取数据失败 异常提示
+              console.log(err);
+            });
+        },
+      },
       // 定义私有组件
       components:{
           login:{
