@@ -18,6 +18,8 @@ const router = new VueRouter({
     // 默认进入首页 为 Home     http://localhost:8080/Home
     path: '/', redirect: '/Home'
   },{
+    path: '/Home/Page1', component: Page1
+  },{
     path: '/Page1', component: Page1
   },{
     path: '/Page2', component: Page2
