@@ -93,7 +93,7 @@
         this.$http.post(('article_comment/article_comment_id=0'),data,{emulateJSON:false}).then(response => {
           // console.log(response.body);
           // this.grouplist = response.body;
-          alert("提交成功！")
+          alert("发表成功！")
           // 数据提交成功后 评论表单清空
           this.item.Content = ''
           this.reload()   // 调用页面刷新函数
