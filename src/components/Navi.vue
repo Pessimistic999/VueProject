@@ -54,7 +54,8 @@
           <!--</div>-->
 
           <div style="margin-top:10px">
-            <transition>
+            <!-- 切换页面，添加动画 -->
+            <transition mode="out-in">
               <router-view v-if="IsRouterAlive"></router-view>
             </transition>
           </div>
@@ -129,7 +130,7 @@
   .v-enter,v-leave-to{
     opacity: 0;
     /*从右到左*/
-    transform: translateX(150px);
+    transform: translateX(100%);
   }
   .v-enter-active,.v-leave-active{
     transition: all 1s ease;
