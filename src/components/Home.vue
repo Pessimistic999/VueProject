@@ -147,14 +147,14 @@
   import src7 from '../assets/Cloud.svg'
   import src8 from '../assets/_Sales.svg'
   var grids = [
-    {id:1, src:src1,title:'组织建设', cont:'一网打尽全球组织，有效联络每一位成员', router:{name:'1'}},
-    {id:2, src:src2,title:'校友云卡', cont:'电子身份快速认证，打通校企与校友之间的桥梁', router:{name:'1'}},
-    {id:3, src:src3,title:'信息平台', cont:'学校官网、微信公众号、h5、app、小程序等多平台信息统一', router:{name:'1'}},
-    {id:4, src:src4,title:'资金筹集', cont:'潜在捐赠人跟进管理项目开发及时对接', router:{name:'1'}},
-    {id:4, src:src5,title:'项目管理', cont:'实现项目、协议多对多的管理资金详细记录，随时提取报表', router:{name:'1'}},
-    {id:4, src:src6,title:'运营宝箱', cont:'活动、邮件、短信、投票、文章、相册等多类工具', router:{name:'1'}},
-    {id:4, src:src7,title:'智能网络', cont:'智能邮件推送、ai机器人辅助管理、网络信息爬虫', router:{name:'1'}},
-    {id:4, src:src8,title:'纪念商品', cont:'个性化店铺设置、分类商品管理、积分兑换系统', router:{name:'1'}},
+    {id:1, src:src1,title:'组织建设', cont:'一网打尽全球组织，有效联络每一位成员', router:{path:'/Page1'}},
+    {id:2, src:src2,title:'校友云卡', cont:'电子身份快速认证，打通校企与校友之间的桥梁', router:{path:'1'}},
+    {id:3, src:src3,title:'信息平台', cont:'学校官网、微信公众号、h5、app、小程序等多平台信息统一', router:{path:'1'}},
+    {id:4, src:src4,title:'资金筹集', cont:'潜在捐赠人跟进管理项目开发及时对接', router:{path:'1'}},
+    {id:4, src:src5,title:'项目管理', cont:'实现项目、协议多对多的管理资金详细记录，随时提取报表', router:{path:'1'}},
+    {id:4, src:src6,title:'运营宝箱', cont:'活动、邮件、短信、投票、文章、相册等多类工具', router:{path:'1'}},
+    {id:4, src:src7,title:'智能网络', cont:'智能邮件推送、ai机器人辅助管理、网络信息爬虫', router:{path:'1'}},
+    {id:4, src:src8,title:'纪念商品', cont:'个性化店铺设置、分类商品管理、积分兑换系统', router:{path:'1'}},
   ]
     export default {
       name: "home",
