@@ -1,6 +1,7 @@
 <template>
     <div id="home">
       <div class="home">
+        <h1>测试 webstorm 更新代码到 GitHub 中</h1>
         <h1 style="color: grey;margin-bottom: 10px">校友会管理平台首页</h1>
         <!-- 轮播图 -->
         <div class="window" @mouseover="stop" @mouseleave="play">
