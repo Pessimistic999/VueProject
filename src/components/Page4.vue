@@ -2,7 +2,7 @@
 
     <div>
 
-      <mt-swipe :auto="4000" style="height: 200px;">
+      <mt-swipe :auto="4000" style="height: 200px;width: 75%;margin: auto">
         <mt-swipe-item v-for="item in lunboList" :key="item.ArticleId">
           <img :src="item.TitlePhoto" alt="" style="height: 100%;width: 100%"/>
         </mt-swipe-item>
