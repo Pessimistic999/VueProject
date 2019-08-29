@@ -115,8 +115,13 @@ Vue.use(Dialog)
 // 引入标签栏
 import { Tab, Tabs } from 'vant'
 Vue.use(Tab).use(Tabs)
-import 'vant/lib/Tab/style';
-import 'vant/lib/Tabs/style';
+import { Grid, GridItem, Image} from 'vant'
+Vue.use(Grid).use(GridItem).use(Image)
+import 'vant/lib/Tab/style'
+import 'vant/lib/Tabs/style'
+import 'vant/lib/grid/style'
+import 'vant/lib/grid-item/style'
+import 'vant/lib/image/style'
 
 new Vue({
   el: '#app',
