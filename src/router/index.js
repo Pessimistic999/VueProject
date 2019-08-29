@@ -10,6 +10,7 @@ import Help from '../components/Help.vue'
 import Sets from '../components/Sets.vue'
 import Comments from '../components/Comments.vue'
 import Singleblogs from '../components/Singleblogs.vue'
+import Photo from '../components/Photo.vue'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -35,6 +36,8 @@ const router = new VueRouter({
     path:'/Help', component: Help
   },{
     path:'/Sets', component: Sets
+  },{
+    path:'/Photo', component: Photo
   },{
     path:'/Comments/:ArticleId', component: Comments
   },{

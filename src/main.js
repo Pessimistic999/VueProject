@@ -90,6 +90,9 @@ Vue.use(mavonEditor)
 Vue.config.productionTip = false
 
 
+// 引入mui组件样式 和其他页面样式有冲突，暂未用
+// import './lib/mui/css/mui.min.css'
+
 // 引入第三方数据请求方法
 // Vue.use(Vuex)
 // Vue.prototype.$http = Axios

@@ -110,6 +110,9 @@
           case '5':
             this.$router.push('/Page4')
             break;
+          case '6':
+            this.$router.push('/Photo')
+            break;
           case '9':
             this.$router.push('/About')
             break;
