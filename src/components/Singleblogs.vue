@@ -16,7 +16,7 @@
     <!--分割线-->
     <p class="cell_dashed"></p>
     <i class="el-icon-edit-outline" style="font-size: 15px;
-    margin-top: 20px">评论</i>
+    margin-top: 20px">校友评论</i>
     <router-link  v-bind:to="'/Comments/'+ blog.ArticleId">
     <i class="el-icon-s-grid" style="font-size: 14px;
     float: right;margin-top: 20px">更多</i>
