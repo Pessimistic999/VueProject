@@ -71,11 +71,15 @@ Vue.component('Col',Col)
 import 'iview/dist/styles/iview.css'
 
 
+import preview from 'vue-photo-preview'
+import 'vue-photo-preview/dist/skin.css'
+Vue.use(preview)
+
 
 //使用mint-ui 引入全部的组件
 import Mint from 'mint-ui'
-Vue.use(Mint)
 import 'mint-ui/lib/style.css'
+Vue.use(Mint)
 
 //使用element-ui 引入全部的组件
 import ElementUI from 'element-ui'
@@ -112,16 +116,17 @@ import { Dialog } from 'vant'
 // 全局注册
 Vue.use(Dialog)
 
-// 引入标签栏
-import { Tab, Tabs } from 'vant'
-Vue.use(Tab).use(Tabs)
-import { Grid, GridItem, Image} from 'vant'
-Vue.use(Grid).use(GridItem).use(Image)
+
+// 引入部分vant组件
+import { Grid, GridItem, Image, Step, Steps, Tab, Tabs} from 'vant'
+Vue.use(Grid).use(GridItem).use(Image).use(Step).use(Steps).use(Tab).use(Tabs)
 import 'vant/lib/Tab/style'
 import 'vant/lib/Tabs/style'
 import 'vant/lib/grid/style'
 import 'vant/lib/grid-item/style'
 import 'vant/lib/image/style'
+import 'vant/lib/Step/style'
+import 'vant/lib/Steps/style'
 
 new Vue({
   el: '#app',

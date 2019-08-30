@@ -2,7 +2,7 @@
   <div id="photos">
     <div class="photos">
       <i class="el-icon-picture-outline" style="font-size: 16px;margin-bottom: 15px">{{blog.PhotoTitle}}</i>
-      <img :src="blog.PhotoFileName" alt="" style="height: 350px;width: 100%"/>
+      <img :src="blog.PhotoFileName" alt="" style="height: 350px;width: 100%" preview :preview-text="blog.PhotoTitle" />
       <el-divider></el-divider>
       <i class="el-icon-edit-outline" style="font-size: 15px;
     margin-top: 20px">校友评论</i>
