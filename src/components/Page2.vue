@@ -71,6 +71,7 @@
       </van-steps>
 
 
+      <!-- 大图预览 -->
       <div>
         <el-image
           style="width: 100px; height: 100px"
