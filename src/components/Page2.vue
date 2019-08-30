@@ -52,6 +52,33 @@
           <Button @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
         </FormItem>
       </Form>
+
+      <!-- 步骤条 -->
+      <van-steps :active="active" active-icon="success"
+        active-color="#38f" direction="vertical">
+        <van-step>
+          <p>【城市】物流状态1</p>
+          <p>2016-07-12 12:40</p>
+        </van-step>
+        <van-step>
+          <p>【城市】物流状态2</p>
+          <p>2016-07-11 10:00</p>
+        </van-step>
+        <van-step>
+          <p>快件已发货</p>
+          <p>2016-07-10 09:30</p>
+        </van-step>
+      </van-steps>
+
+
+      <div>
+        <el-image
+          style="width: 100px; height: 100px"
+          :src="url"
+          :preview-src-list="srcList">
+        </el-image>
+      </div>
+
     </div>
   </div>
 </template>
@@ -61,6 +88,12 @@
     name: "Page2",
     data(){
       return{
+        url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+        srcList: [
+          'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',
+          'https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg'
+        ],
+        active:1,
         formValidate: {
           name: '',
           mail: '',
