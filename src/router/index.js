@@ -13,6 +13,7 @@ import Singleblogs from '../components/Singleblogs.vue'
 import AlbumDetail from '../components/AlbumDetail.vue'
 import Photo from '../components/Photo.vue'
 import Photos from '../components/Photos.vue'
+import Chart from '../components/Chart.vue'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -40,6 +41,8 @@ const router = new VueRouter({
     path:'/Sets', component: Sets
   },{
     path:'/Photo', component: Photo
+  },{
+    path:'/Chart', component: Chart
   },{
     path:'/Photo/AlbumDetail/Photos/:PhotoId', component: Photos
   },{

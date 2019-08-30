@@ -296,6 +296,7 @@
     }
 </script>
 
+<!-- scoped ： 只在当前页面生效-->
 <style scoped>
   /*容器*/
   .home{
