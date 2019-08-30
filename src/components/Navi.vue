@@ -31,11 +31,11 @@
           <div>
             <el-menu default-active="1" class="el-menu-vertical-demo" style="min-height:800px" @select="handleSelect">
               <el-menu-item index="1"><i class="el-icon-s-home"></i>首页</el-menu-item>
-              <el-menu-item index="2"><i class="el-icon-message"></i>菜单一</el-menu-item>
+              <el-menu-item index="2"><i class="el-icon-edit-outline"></i>菜单一</el-menu-item>
               <el-menu-item index="3"><i class="el-icon-menu"></i>菜单二</el-menu-item>
-              <el-menu-item index="4"><i class="el-icon-s-fold"></i>菜单三</el-menu-item>
+              <el-menu-item index="4"><i class="el-icon-tickets"></i>文章</el-menu-item>
               <el-menu-item index="5"><i class="el-icon-s-marketing"></i>菜单四</el-menu-item>
-              <el-menu-item index="6"><i class="el-icon-folder"></i>菜单五</el-menu-item>
+              <el-menu-item index="6"><i class="el-icon-picture-outline"></i>相册</el-menu-item>
               <el-menu-item index="7"><i class="el-icon-tickets"></i>菜单六</el-menu-item>
               <el-menu-item index="8"><i class="el-icon-user"></i>个人中心</el-menu-item>
               <el-menu-item index="9"><i class="el-icon-monitor"></i>关于我们</el-menu-item>
