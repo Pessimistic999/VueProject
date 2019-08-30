@@ -70,18 +70,18 @@ Vue.component('Submenu',Submenu)
 Vue.component('Col',Col)
 import 'iview/dist/styles/iview.css'
 
-
+// 引入图片点击放大预览插件 vue-photo-preview
 import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
 Vue.use(preview)
 
 
-//使用mint-ui 引入全部的组件
+//使用mint-ui   引入全部的组件
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(Mint)
 
-//使用element-ui 引入全部的组件
+//使用element-ui    引入全部的组件
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
