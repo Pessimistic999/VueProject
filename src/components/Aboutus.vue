@@ -155,7 +155,7 @@ margin-left: 30px"/>
             <div>
               <div class="happy" style="float: right;margin-right: 24px">
                 <div class="love">
-                  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566464338275&di=13a3ae89768ffea1dd126d402a905bf1&imgtype=0&src=http%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2F2018%2F591%2F105%2F8567501195_752987408.jpg" alt="" />
+                  <img preview src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566464338275&di=13a3ae89768ffea1dd126d402a905bf1&imgtype=0&src=http%3A%2F%2Fcbu01.alicdn.com%2Fimg%2Fibank%2F2018%2F591%2F105%2F8567501195_752987408.jpg" alt="" />
                 </div>
                 <div class="you">
                   <h3 style="color: gray">二维码</h3>
