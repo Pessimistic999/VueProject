@@ -60,6 +60,7 @@
       },
       methods:{
         getAlbum(){
+          // url路径为相对路径，且前面不能有 /
           var url = 'album_list'
           this.$http.get(url).then((response)=> {
               this.albumList = response.data
