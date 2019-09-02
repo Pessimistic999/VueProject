@@ -1,5 +1,5 @@
 <template>
-  <div style="min-height:800px" >
+  <div style="min-height:800px" class="note" :style ="note">
     <div style="width:100%;background-color: #636363; overflow: hidden">
       <span class="demonstration" style="float:left;padding-top:10px;color:white;margin-left:1%;font-size: 20px">
           校友会管理平台
@@ -77,7 +77,17 @@
         searchCriteria: '',
         // breadcrumbItems: ['编辑页面一'],
         table:'1',
-        IsRouterAlive:true
+        IsRouterAlive:true,
+
+
+        note: {
+          backgroundImage: "url(" + require("../assets/timg.png") + ")",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "25px auto",
+          marginTop: "5px",
+        },
+
+
       }
     },
 
