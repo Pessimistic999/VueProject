@@ -53,12 +53,12 @@
             console.log(err);
           });
       },
-      // 搜索功能 通过关键字判断(比对文章标题)
+      // 搜索功能 通过关键字判断(比对文章标题和文章来源)
       search(input){
         var newList = []
         this.aList.forEach(item =>{
-          //通过 indexof() 判断文章标题是否包含关键字 包含则将数据存放新数组并返回
-          if(item.Title.indexOf(input) != -1){
+          //通过 indexof() 判断文章标题或者文章来源是否包含关键字 包含则将数据存放新数组并返回
+          if((item.Title.indexOf(input) != -1) || (item.ArticleSource.indexOf(input) != -1)){
             newList.push(item)
           }
         })
