@@ -56,6 +56,7 @@
             </li>
           </ul>
         </div>
+
         <h2 style="color: grey;margin-top: 15px">校友会管理平台热点资讯</h2>
         <!--分割线-->
         <p class="cell_dashed"></p>
