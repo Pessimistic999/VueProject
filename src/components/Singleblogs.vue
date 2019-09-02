@@ -133,7 +133,7 @@
     max-width: 960px;
     margin:10px auto;
     padding:20px;
-    background: white;
+    background-color: #f7f7f7;
   }
   .img{
     text-align: center;
