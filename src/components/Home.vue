@@ -44,7 +44,7 @@
             <li v-for="(grid, index) in grids">
               <el-popover placement="top-start" :title="grid.title"
                 width="300" trigger="hover" :content="grid.cont">
-                <el-button slot="reference">
+                <el-button slot="reference" style="background-color: bisque;height: 100px;width: 100px">
                   <!--这里是点击时要跳转的路由-->
                   <router-link :to="grid.router">
                     <img :src="grid.src">
