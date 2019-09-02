@@ -95,11 +95,11 @@
         this.table = key
         switch(this.table){
           case '1':
-            this.$router.push('/Home');
+            this.$router.push('/Home')
             // this.breadcrumbItems  = ['编辑页面一']
             break;
           case '2':
-            this.$router.push('/Page1');
+            this.$router.push('/Page1')
             break;
           case '3':
             this.$router.push('/Page2')
@@ -145,5 +145,6 @@
   .navi{
     background:url("../assets/backImg.png");
   }
+
 
 </style>
