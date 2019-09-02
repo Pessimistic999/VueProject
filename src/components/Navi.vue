@@ -105,7 +105,7 @@
             this.$router.push('/Page2')
             break;
           case '4':
-            this.$router.push('/Page3')
+            this.$router.push('/Article')
             break;
           case '5':
             this.$router.push('/Page4')

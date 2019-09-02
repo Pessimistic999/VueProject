@@ -193,7 +193,7 @@
         // 更多新闻
         artMore(){
           this.$router.push({
-            path: '/Page3'
+            path: '/Article'
           })
         },
         // 更多活动
