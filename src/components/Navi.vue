@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: white;min-height:800px">
+  <div style="min-height:800px" >
     <div style="width:100%;background-color: #636363; overflow: hidden">
       <span class="demonstration" style="float:left;padding-top:10px;color:white;margin-left:1%;font-size: 20px">
           校友会管理平台
@@ -133,12 +133,15 @@
 </script>
 
 <style scoped>
+
+  /* 切换动画 */
   .v-enter,v-leave-to{
     opacity: 0;
     /*从右到左*/
     transform: translateX(100%);
   }
   .v-enter-active,.v-leave-active{
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
+
 </style>
