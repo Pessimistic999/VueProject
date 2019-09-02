@@ -141,6 +141,7 @@
   .v-enter-active,.v-leave-active{
     transition: all 0.3s ease;
   }
+  /*  添加背景图片 */
   .navi{
     background:url("../assets/backImg.png");
   }
