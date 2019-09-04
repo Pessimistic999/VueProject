@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Navi from './components/Navi.vue'
 import router from './router/index'
-import Axios from 'axios'   //导入axios
-import Vuex from 'vuex'     //导入vuex
+import Axios from 'axios'     //导入axios
+import Vuex from 'vuex'       //导入vuex
 
 // 全局 时间过滤器
 Vue.filter('dateFormat',function (dateStr, pattern) {
   var dt = new Date(dateStr)
   var Y = dt.getFullYear()
   // String.prototype.padStart(maxLength,'')  填充字符串（在前面）
-  // String.prototype.padEnd(maxLength,'')  填充字符串（在后面）
+  // String.prototype.padEnd(maxLength,'')    填充字符串（在后面）
   var M = (dt.getMonth() + 1).toString().padStart(2,'0')
   var D = (dt.getDate()).toString().padStart(2,'0')
   var h = (dt.getHours()).toString().padStart(2,'0')
