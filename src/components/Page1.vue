@@ -321,7 +321,7 @@
       saveDoc(value,render){
         this.html = render
         this.markdown = value
-        console.log(this.html)
+        console.log(this.markdown)
       },
       // 2.更新数据
       updateDoc(value, render) {

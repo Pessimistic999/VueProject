@@ -43,7 +43,7 @@
     methods:{
       getArticle() {
         //新闻列表接口：
-        var urls = 'article_list/';
+        var urls = 'article/list/verify_flag=1?page=1';
         //jsonp请求数据时，后台API接口要支持jsonp
         this.$http.get(urls).then((response)=> {
             this.aList = response.data

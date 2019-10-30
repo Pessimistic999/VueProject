@@ -256,7 +256,7 @@
         getArticle() {
           //新闻列表接口：
           // url路径为相对路径，且前面不能有 /
-          var urls = 'article_list/';
+          var urls = 'article/list/verify_flag=1?page=1';
           //jsonp请求数据时，后台API接口要支持jsonp
           this.$http.get(urls).then((response)=> {
               this.aList = response.data
@@ -267,8 +267,8 @@
             });
         },
         getActivity() {
-          //新闻列表接口：
-          var urls = 'activity_list/';
+          //活动列表接口：
+          var urls = 'activity/list/verify_flag=1?page=1';
           //jsonp请求数据时，后台API接口要支持jsonp
           this.$http.get(urls).then((response)=> {
               this.bList = response.data

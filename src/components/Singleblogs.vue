@@ -37,7 +37,6 @@
     </div>
 
     <div style="margin-top: 15px;margin-bottom: 15px;height: 12px">
-      <!-- @keyup.enter="submit" 监听enter键，触发submit()事件 -->
       <input type="text" style="width: 90%;height: 30px" placeholder="请输入评论内容"
              v-model="item.Content" v-on:keyup.enter="submit" />
       <button @click="submit" style="width: 10%;height: 30px;float: right">发表</button>
@@ -45,7 +44,6 @@
         <!--<el-button slot="append" icon="el-icon-edit-outline" @click="submit"></el-button>-->
       <!--</el-input>-->
     </div>
-
   </div>
 </template>
 

@@ -108,7 +108,7 @@ import VueResource from 'vue-resource'
 // 使用VueResource插件
 Vue.use(VueResource)
 // 配置全局的数据接口
-Vue.http.options.root = 'http://127.0.0.1:8000/'
+Vue.http.options.root = 'https://www.whdszy.cn/'
 // 全局启用emulateJSON 选项（可以防止一些意外发生）
 Vue.http.options.emulateJSON = true
 
