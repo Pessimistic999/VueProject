@@ -256,22 +256,23 @@
         getArticle() {
           //新闻列表接口：
           // url路径为相对路径，且前面不能有 /
-          var urls = 'article/list/verify_flag=1?page=1';
+          var urls = 'article_list/';
           //jsonp请求数据时，后台API接口要支持jsonp
           this.$http.get(urls).then((response)=> {
-              this.aList = response.data
+              this.aList = response.data.results
               // console.log(this.aList)
             },
             function(err) { 		      //获取数据失败 异常提示
               console.log(err);
             });
         },
+
         getActivity() {
           //活动列表接口：
-          var urls = 'activity/list/verify_flag=1?page=1';
+          var urls = 'activity_list/';
           //jsonp请求数据时，后台API接口要支持jsonp
-          this.$http.get(urls).then((response)=> {
-              this.bList = response.data
+          this.$http.get({urls,headers: {'Content-Type': 'application/json'}}).then((response)=> {
+              this.bList = response.data.results
               // console.log(this.bList)
             },
             function(err) { 		      //获取数据失败 异常提示

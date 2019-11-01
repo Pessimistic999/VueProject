@@ -43,7 +43,7 @@
     methods:{
       getArticle() {
         //新闻列表接口：
-        var urls = 'article/list/verify_flag=1?page=1';
+        var urls = 'article_list';
         //jsonp请求数据时，后台API接口要支持jsonp
         this.$http.get(urls).then((response)=> {
             this.aList = response.data
@@ -52,6 +52,17 @@
           function(err) { 		      //获取数据失败 异常提示
             console.log(err);
           });
+      },
+      getActivity(){
+        //活动列表接口
+        var urls = 'activity_list';
+        //get 获取活动数据
+        this.$http.get(urls).then((response)=>{
+          this.AList = response.data
+        },
+        function (err) {
+          console.log(err)
+        })
       },
       // 搜索功能 通过关键字判断(比对文章标题和文章来源)
       search(input){
@@ -66,7 +77,8 @@
       },
     },
     mounted(){
-      this.getArticle() //
+      this.getArticle()  //文章获取
+      this.getActivity() //活动获取
     }
   }
 </script>
