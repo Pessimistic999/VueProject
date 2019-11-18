@@ -1,7 +1,7 @@
 <template>
   <div id="single-blog">
     <div class="img">
-      <img :src="blog.TitlePhoto" alt="" style="height: 200px;width: 75%"/>
+      <img :src="blog.TitlePhoto" alt="" style="height: 250px;width: 75%"/>
     </div>
     <p class="title">{{blog.Title}}</p>
 

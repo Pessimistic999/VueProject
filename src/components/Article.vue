@@ -2,13 +2,11 @@
   <div id="Page3">
     <div id="article">
       <i class="el-icon-s-grid" style="color: grey;font-size: 15px;margin-bottom: 20px;margin-top: 20px">NEWS&#8195新闻热点</i>
-
       <div style="width: 100%">
         <el-input placeholder="请输入搜索内容" v-model="input" class="input-with-select">
           <el-button slot="append" icon="el-icon-search"></el-button>
         </el-input>
       </div>
-
       <div class="happy" v-for="item in search(input)">
         <router-link  v-bind:to="'/blog/'+ item.ArticleId">
           <div class="love">
@@ -24,10 +22,7 @@
           </div>
         </router-link>
       </div>
-
     </div>
-
-
   </div>
 </template>
 
@@ -93,27 +88,28 @@
   }
   /*图文列表*/
   #article{
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
   .happy{
-    width: 500px;
-    height: 85px;
+    width: 900px;
+    height: 120px;
     margin: 10px auto;
     /*border:solid 1px gainsboro;*/
     overflow: hidden;
     background-color: aliceblue;
   }
   .love{
-    width: 120px;
+    width: 200px;
     float: left;
   }
   .love img{
     display: block;
     width: 100%;
+    height: 120px;
   }
   .you{
-    width: 360px;
+    width: 690px;
     float: right;
   }
 </style>

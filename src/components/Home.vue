@@ -117,7 +117,7 @@
           <br>
         </div>
 
-        <h3 style="color: grey;margin-top: 15px">校友会管理平台 公司简介</h3>
+        <h3 style="color: grey;margin-top: 15px;">校友会管理平台 公司简介</h3>
         <!--分割线-->
         <p class="cell_dashed"></p>
         <div class="happy">
@@ -259,8 +259,8 @@
           var urls = 'article_list/';
           //jsonp请求数据时，后台API接口要支持jsonp
           this.$http.get(urls).then((response)=> {
-              this.aList = response.data.results
-              // console.log(this.aList)
+              this.aList = response.data
+              console.log(this.aList)
             },
             function(err) { 		      //获取数据失败 异常提示
               console.log(err);
@@ -271,9 +271,9 @@
           //活动列表接口：
           var urls = 'activity_list/';
           //jsonp请求数据时，后台API接口要支持jsonp
-          this.$http.get({urls,headers: {'Content-Type': 'application/json'}}).then((response)=> {
-              this.bList = response.data.results
-              // console.log(this.bList)
+          this.$http.get(urls).then((response)=> {
+              this.bList = response.data
+              console.log(this.bList)
             },
             function(err) { 		      //获取数据失败 异常提示
               console.log(err);

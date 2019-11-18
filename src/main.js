@@ -4,7 +4,7 @@ import router from './router/index'
 import Axios from 'axios'     //导入axios
 import Vuex from 'vuex'       //导入vuex
 
-// 全局 时间过滤器
+// 设置全局 时间过滤器
 Vue.filter('dateFormat',function (dateStr, pattern) {
   var dt = new Date(dateStr)
   var Y = dt.getFullYear()
@@ -45,6 +45,7 @@ Vue.directive('color',{
   }
 })
 
+// 引入iview(部分)组件
 import { Button, Table, Form, Radio, Checkbox, RadioGroup, CheckboxGroup, Input, FormItem, Row, DatePicker, TimePicker } from 'iview';
 Vue.component('Button', Button);
 Vue.component('Table', Table);
@@ -75,7 +76,6 @@ import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
 Vue.use(preview)
 
-
 //使用mint-ui   引入全部的组件
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
@@ -93,9 +93,6 @@ Vue.use(mavonEditor)
 
 Vue.config.productionTip = false
 
-
-// 引入mui组件样式 和其他页面样式有冲突，暂未用
-// import './lib/mui/css/mui.min.css'
 
 // 引入第三方数据请求方法
 // Vue.use(Vuex)
@@ -115,8 +112,6 @@ Vue.http.options.emulateJSON = true
 import { Dialog } from 'vant'
 // 全局注册
 Vue.use(Dialog)
-
-
 // 引入部分vant组件
 import { Grid, GridItem, Image, Step, Steps, Tab, Tabs} from 'vant'
 Vue.use(Grid).use(GridItem).use(Image).use(Step).use(Steps).use(Tab).use(Tabs)
@@ -131,5 +126,6 @@ import 'vant/lib/Steps/style'
 new Vue({
   el: '#app',
   router,
+  // 程序入口中显示的就是这个Navi.vue里面的内容
   render: h => h(Navi)
 })

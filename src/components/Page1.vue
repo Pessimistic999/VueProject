@@ -38,7 +38,7 @@
       <p class="cell_dashed"></p>
       <!-- 卡片式轮播 -->
       <h1 style="color: red">卡片式轮播</h1>
-      <el-carousel :interval="4000" type="card" height="200px">
+      <el-carousel :interval="4000" type="card" height="250px">
         <el-carousel-item v-for="item in list" :key="item">
           <img :src="item.TitlePhoto" alt="" style="width: 100%;height: 100%"/>
         </el-carousel-item>
